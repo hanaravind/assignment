@@ -78,7 +78,7 @@ class colleges extends React.Component {
                         <div className="info-section">
                             <div className="info1">
                                 <h3 className="college-title">{data.college_name}</h3>
-                                <p className="near-place">{data.nearest_place[0]} | <span style={{'color': 'adadad'}}>{data.nearest_place[1]}</span></p>
+                                <p className="near-place">{data.nearest_place[0]} | <span style={{'color': '#adadad'}}>{data.nearest_place[1]}</span></p>
                                 <p className="extact-place"><span>93% match:</span> {data.famous_nearest_places}</p>
                                 <p className="offer">{data.offertext}</p>
                             </div>
