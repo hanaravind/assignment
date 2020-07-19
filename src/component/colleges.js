@@ -30,10 +30,7 @@ class colleges extends React.Component {
                 message: 'bottom reached',
                 items: this.state.items + 10,
                 initial: ++this.state.items,
-                data :[
-                    ...this.state.data,
-                    ...lists.colleges.slice(this.state.initial ,this.state.items)
-                ]
+                data : this.state.data.concat(lists.colleges.slice(this.state.initial, this.state.items))
             });
         }
     }
@@ -55,7 +52,7 @@ class colleges extends React.Component {
        console.log(this.state.message)
         return (
             <div>
-                <p className="title">Colleges in noth india</p>
+                <p className="title">Colleges in north india</p>
                 <div className="main-container"  >
                     { jsonData .map( (data, index)=>{
                         return <div className="college-block" key={index} onScroll={this.scrollEnd}>
